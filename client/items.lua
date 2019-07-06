@@ -125,8 +125,8 @@ RegisterNetEvent("mythic_hospital:items:vicodin")
 AddEventHandler("mythic_hospital:items:vicodin", function(item)
     exports['mythic_progbar']:Progress({
         name = "firstaid_action",
-        duration = 1000,
-        label = "Taking " .. item.label,
+        duration = 2000,
+        label = "Taking Vicodin",
         useWhileDead = false,
         canCancel = true,
         controlDisables = {
@@ -157,8 +157,8 @@ RegisterNetEvent("mythic_hospital:items:hydrocodone")
 AddEventHandler("mythic_hospital:items:hydrocodone", function(item)
     exports['mythic_progbar']:Progress({
         name = "firstaid_action",
-        duration = 1000,
-        label = "Taking " .. item.label,
+        duration = 2000,
+        label = "Taking Hydrocodone",
         useWhileDead = false,
         canCancel = true,
         controlDisables = {
@@ -190,7 +190,7 @@ AddEventHandler("mythic_hospital:items:morphine", function(item)
     exports['mythic_progbar']:Progress({
         name = "firstaid_action",
         duration = 2000,
-        label = "Taking " .. item.label,
+        label = "Taking Morphine",
         useWhileDead = false,
         canCancel = true,
         controlDisables = {
